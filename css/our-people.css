@@ -21,7 +21,9 @@ img {
   position: absolute;
   left:50%;
   transform: translate(-50%,-25%);
-  border:1px solid black;
+  /* border:1px solid black; */
+  height:100%;
+  max-height: 100%;
 }
 .position {
   font-size: 12px;
@@ -57,22 +59,30 @@ img {
   .researcher-header {
     height:200px;
   }
-  .volunter-avatar {
-    width: 65px;
-    height: 65px;
-   
-   
-   }
-
 } 
-@media screen and (max-width:400px) {
+@media screen and (max-width:767px) {
+  .volunteer-area {
+    text-align:center
+  }
+  .volunteer {
+    width: 45%;
+    
+  }
+}
+
+@media screen and (max-width:500px) {
+  .volunteer-area {
+    text-align:left;
+  }
   .researcher-header {
     height:150px;
   }
-  .volunter-avatar {
-    width: 40px;
-    height: 40px;
+   .volunteer {
+    width: 48%;
+    
+  }
+  .volunteer > a > p {
+    text-align: left !important;
+  }
    
-   
-   }
 } 
