@@ -17,6 +17,46 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700|Source+Sans+Pro:700&display=swap');
 html,body {
     height:100%;
+
+}
+
+body
+{
+    display: flex;
+    flex-flow: column;
+}
+
+footer
+{    
+    margin-top: auto;
+    font-size: .8rem;
+    padding: 2em 0;
+}
+
+footer .container
+{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+footer img
+{
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+#footerDetail
+{
+    margin-left: auto;
+    display: flex;
+    flex-flow: row;    
+}
+
+#footerDetail a
+{
+    margin-right: 1em;
 }
 
 :root
@@ -124,6 +164,20 @@ section
     font-size: 1.5rem;
 }
 
-/* 3. Pages */
 
-/* 3.1 index.html */
+@media screen and (max-width: 768px)
+{
+    footer .container
+    {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    #footerDetail
+    {
+        margin-left: 0;
+        margin-top: 15px;
+        flex-flow: column;
+    }
+}
+
