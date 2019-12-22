@@ -7,8 +7,9 @@
     display: flex;
     justify-content: space-between;
     /* padding:5%; */
+
     padding-bottom: 5%;
-    align-items: baseline;
+    align-items: center;
 }
 
 .content-top div{
@@ -56,7 +57,7 @@
 
 .researchFocus{
     background-image: url("../images/bulbs.png");
-    padding: 2%;
+    padding: 5em 0;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 20%;
@@ -104,10 +105,10 @@
 .contact-us{
     text-align: center;
     padding: 5%;
-    background:linear-gradient(to bottom, rgba(0, 69, 138,1), rgba(0, 189, 219,0.5)),url("../images/contactus.png");
+    background:linear-gradient(to bottom, rgba(0, 69, 138,1), rgba(0, 189, 219,0.9)),url("../images/contactus.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     color:white;
 }
 
@@ -118,7 +119,7 @@
 }
 
 .contact--content{
-    margin-bottom:5%;
+    margin-bottom:3%;
 }
 
 .btn-primary--bg{
@@ -224,7 +225,7 @@ nav .menu{
     .researchFocus{
         max-width: 768px;
         background-image: url("../images/bulbs.png");
-        padding: 8%;
+        /* padding: 8%; */
         background-position: bottom;    
         background-repeat: no-repeat;
         background-size: 20%;
@@ -243,6 +244,7 @@ nav .menu{
         margin-bottom:5%;
         background-color: white;
         max-width:680px;
+        padding: 1em;
     }
 
     .card .paragraph{
@@ -252,7 +254,7 @@ nav .menu{
     .card .header{
         font-size:1.5rem;
         line-height: 30px;
-        padding:8%;
+        padding-top:3%;
     }
     
     .content-bottom{
@@ -281,10 +283,10 @@ nav .menu{
         max-height:768px;
         text-align: center;
         padding: 8%;
-        background:linear-gradient(to bottom, rgba(0, 69, 138,1), rgba(0, 189, 219,0.5)),url("../images/contactus.png");
+        background:linear-gradient(to bottom, rgba(0, 69, 138,1), rgba(0, 189, 219,0.9)),url("../images/contactus.png");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100%;
+        background-size: cover;
         color:white;
         border:1px solid black;
     }
@@ -297,7 +299,7 @@ nav .menu{
     }
     
     .contact--content{
-        margin-bottom:5%;
+        margin-bottom:3%;
     }
     
     .btn-primary--bg{
