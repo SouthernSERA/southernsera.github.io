@@ -2,56 +2,141 @@ nav{
     color:#00458A;
     display:flex;
     justify-content: space-between;
-    padding: 10px 90px 10px 90px;
+    padding: 0px 90px 0px 90px;
     box-shadow: 1px 1px 8px #888888;
 }
 
 nav div a{
     color:#00458A;
     text-decoration: none;
-    padding:20px;
+    padding-right:20px;
 }
 
 nav div{
-    padding:25px;
+    padding:1.5%;
 }
 *{
     margin:0
 }
 
-.content{
-    padding:100px;
-}
-
 .content-top{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 100px;
-    flex-direction: row-reverse;
+    padding:5%;
+    padding-bottom: 5%;
 }
 
-.content-top h1{
-    color:#00458A;
-}
-.content-top .heading{
-    margin-bottom: 10%;
+.content-top div{
+    width: 50%;
+    padding-right: 6%;
 }
 
-.content-bottom{
-    display:flex
+.content-top div div{
+    width: 100%;
+    padding-right: 0;
 }
 
 .content-top img{
-    width:500px;
-    height:400px
+    width: 100%;
+    height: 100%;
+    max-width:500px;
+    max-height:400px
+}
+
+.content-middle{
+    padding:5%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10%;
+    align-items: baseline;
+    
+}
+
+.content-middle div{
+    width: 50%;
+    padding-right: 5%;
+}
+
+.content-middle div div{
+    width: 100%;
+    padding-right: 0;
+}
+.content-middle img{
+    width: 100%;
+    height: 100%;
+    max-width:500px;
+    max-height:400px
+}
+
+.researchFocus{
+    background-image: url("../images/bulbs.png");
+    padding: 2%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-color:  #F8F9FB;
+}
+
+.researching{
+    text-align: center;
+}
+
+.researchContent{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .card{
-    width:400px;
-    box-shadow: 0 20px 50px rgba(0,0,0, .1);
-    border: none !important;
-    padding: 2em;
+    margin:3%;
+    background-color: white;
 }
+
+.content-bottom{
+    display:flex;
+    padding: 5%;
+}
+
+.content-bottom .bottom{
+    margin:5%;
+    text-align: center;
+    width:50%;
+}
+.content-bottom p{
+    min-height:150px;
+}
+.content-bottom img{
+    max-width: 500px;
+}
+.btn-primary--outline{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-us{
+    text-align: center;
+    padding: 5%;
+    background:linear-gradient(to bottom, rgba(0, 69, 138,1), rgba(0, 189, 219,0.5)),url("../images/contactus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color:white;
+}
+
+.contact-us div div{
+     font-size: 20px;
+     margin-left:30%;
+     margin-right:30%;
+}
+
+.contact--content{
+    margin-bottom:5%;
+}
+
+.btn-primary--bg{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 nav .menu{
     display:none;
     background-color:transparent;
@@ -64,31 +149,180 @@ nav .menu{
 
 .nav a{
     display:block;
-    background-color:#00458A;
-    color:white;
+    background-color:white;
+    color:#00458A !important;
+    padding:2%;
 }
 
-.logo{
-    width:150px;
-}
 
-.card-img-top{
-    height:200px;
-}
-.paragraph{
-    height:130px;
-}
+@media only screen and (max-width: 768px){
 
-@media only screen and (max-width: 500px){
+    .content-top{
+        max-width: 768px;
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+        padding:9%;
+
+       
+    }
+    
+    .content-top div{
+        width: 100%;
+        max-width: 680px;
+    }
+    
+    .content-top div div{
+        width: 100%;
+        padding-right: 0;
+    }
+
+       
+    .content-top img{
+        width: 100%;
+        height: 100%;
+        max-width:680px;
+        margin-bottom: 10%;
+    }
+    .content-top .hero--title{
+        margin-bottom:10%;
+    }
+    .hero--title{
+        font-size: 2.5rem;
+    }
+
+    .paragraph{
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+ 
+    
+    .content-middle{
+        max-width: 768px;
+        padding:9%;
+        display: block;
+        justify-content: center;
+        padding-bottom: 10%;
+    }
+    
+    .content-middle div{
+        width: 100%;
+        padding-bottom: 5%;
+        max-width:680px;
+    }
+    
+    .content-middle div div{
+        width: 100%;
+
+    }
+    .content-middle img{
+        width: 100%;
+        height: 100%;
+        max-width:680px;
+    }
+    
+    .researching{
+        text-align: left;
+        padding:0;
+        padding-bottom: 5%;
+    }
+    
+    .researchFocus{
+        max-width: 768px;
+        background-image: url("../images/bulbs.png");
+        padding: 8%;
+        background-position: bottom;    
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-color:  #F8F9FB;
+        padding-bottom:8%;
+    }
+    
+    .researchContent{
+  
+        display: block;
+        justify-content: space-evenly;
+    }
+    
+    .card{
+        margin:0%;
+        margin-bottom:5%;
+        background-color: white;
+        max-width:680px;
+    }
+
+    .card .paragraph{
+        margin:5%;
+    }
+
+    .card .header{
+        font-size:1.5rem;
+        line-height: 30px;
+        padding:8%;
+    }
+    
+    .content-bottom{
+        max-width: 768px;
+        display:block;
+    }
+    
+    .content-bottom .bottom{
+        text-align: center;
+        width:100%;
+    }
+    .content-bottom p{
+        min-height:0px;
+        margin:7%;
+    }
+    .content-bottom img{
+        max-width: 680px;
+    }
+    .btn-primary--outline{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-us{
+        max-height:768px;
+        text-align: center;
+        padding: 8%;
+        background:linear-gradient(to bottom, rgba(0, 69, 138,1), rgba(0, 189, 219,0.5)),url("../images/contactus.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        color:white;
+    }
+    
+    .contact-us div div{
+         font-size: 20px;
+         margin-left:15%;
+         margin-right:15%;
+         margin-top:6%;
+    }
+    
+    .contact--content{
+        margin-bottom:5%;
+    }
+    
+    .btn-primary--bg{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 
     nav{
         color:#00458A;
         justify-content: space-between;
         padding: 10px 0px 0px 0px;
         box-shadow: 1px 1px 8px #888888;
+        display:flex;
+        max-width: 768px;
     }
     nav .menu{
         display:block;
+        font-size:2rem;
+        padding:5%;
+        color:lightblue;
     }
     
     nav div a{
@@ -102,49 +336,11 @@ nav .menu{
         display:none;
     }
 
-    *{
-        margin:0
-    }
-    
-    .content{
-        padding:50px;
-    }
-    
-    .content-top{
+    .head{
         display: block;
-        padding-bottom: 10px;
+        font-size:2.5rem;
     }
+
     
-    .content-top h1{
-        color:#00458A;
-        font-size:20px;
-    }
-    .content-top .heading{
-        margin-bottom: 10%;
-    }
-    
-    .content-bottom{
-        display:block
-    }
-
-    .content-top img{
-        width:260px;
-        height:100%;
-    }
-
-    .card{
-        width:260px;
-    }
-
-
-    .logo{
-        width:50px;
-        height: 100%;
-    }
-
-    .paragraph{
-        height:150px;
-        font-size:15px;
-    }
     
 }
