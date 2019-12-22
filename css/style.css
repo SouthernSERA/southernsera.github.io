@@ -1,0 +1,350 @@
+nav{
+    width:100%;
+    color:#00458A;
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 90px 0px 90px;
+    box-shadow: 1px 1px 8px #888888;
+}
+
+nav div a{
+    color:#00458A;
+    text-decoration: none;
+    padding-right:20px;
+}
+
+nav div{
+    padding:1.5%;
+}
+*{
+    margin:0
+}
+
+.content-top{
+    display: flex;
+    justify-content: space-between;
+    padding:5%;
+    padding-bottom: 5%;
+    align-items: baseline;
+}
+
+.content-top div{
+    width: 50%;
+    padding-right: 6%;
+}
+
+.content-top div div{
+    width: 100%;
+    padding-right: 0;
+}
+
+.content-top img{
+    width: 100%;
+    height: 100%;
+    max-width:500px;
+    max-height:400px
+}
+
+.content-middle{
+    padding:5%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10%;
+    align-items: baseline;
+    
+}
+
+.content-middle div{
+    width: 50%;
+    padding-right: 5%;
+}
+
+.content-middle div div{
+    width: 100%;
+    padding-right: 0;
+}
+.content-middle img{
+    width: 100%;
+    height: 100%;
+    max-width:500px;
+    max-height:400px
+}
+
+.researchFocus{
+    background-image: url("../images/bulbs.png");
+    padding: 2%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-color:  #F8F9FB;
+}
+
+.researching{
+    text-align: center;
+}
+
+.researchContent{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin:3%;
+    background-color: white;
+}
+
+.content-bottom{
+    display:flex;
+    padding: 5%;
+}
+
+.content-bottom .bottom{
+    margin:5% 0;
+    text-align: center;
+    width:50%;
+}
+.content-bottom p{
+    min-height:150px;
+}
+.content-bottom img{
+    width:100%;
+}
+.btn-primary--outline{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-us{
+    text-align: center;
+    padding: 5%;
+    background:linear-gradient(to bottom, rgba(0, 69, 138,1), rgba(0, 189, 219,0.5)),url("../images/contactus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color:white;
+}
+
+.contact-us div div{
+     font-size: 20px;
+     margin-left:30%;
+     margin-right:30%;
+}
+
+.contact--content{
+    margin-bottom:5%;
+}
+
+.btn-primary--bg{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav .menu{
+    display:none;
+    background-color:transparent;
+    border:none;
+}
+.nav{
+    display:none;
+    font-size:20px; 
+}
+
+.nav a{
+    display:block;
+    background-color:white;
+    color:#00458A !important;
+    padding:2%;
+}
+
+
+@media only screen and (max-width: 768px){
+
+    .content-top{
+        max-width: 768px;
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+        padding:9%;
+
+       
+    }
+    
+    .content-top div{
+        width: 100%;
+        max-width: 680px;
+    }
+    
+    .content-top div div{
+        width: 100%;
+        padding-right: 0;
+    }
+
+       
+    .content-top img{
+        width: 100%;
+        height: 100%;
+        max-width:680px;
+        margin-bottom: 10%;
+    }
+    .content-top .hero--title{
+        margin-bottom:10%;
+    }
+    .hero--title{
+        font-size: 2.5rem;
+    }
+
+    .paragraph{
+    
+        line-height: 2rem;
+    }
+ 
+    
+    .content-middle{
+        max-width: 768px;
+        padding:9%;
+        display: block;
+        justify-content: center;
+        padding-bottom: 10%;
+    }
+    
+    .content-middle div{
+        width: 100%;
+        padding-bottom: 5%;
+        max-width:680px;
+    }
+    
+    .content-middle div div{
+        width: 100%;
+
+    }
+    .content-middle img{
+        width: 100%;
+        height: 100%;
+        max-width:680px;
+    }
+    
+    .researching{
+        text-align: left;
+        padding:0;
+        padding-bottom: 5%;
+    }
+    
+    .researchFocus{
+        max-width: 768px;
+        background-image: url("../images/bulbs.png");
+        padding: 8%;
+        background-position: bottom;    
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-color:  #F8F9FB;
+        padding-bottom:8%;
+    }
+    
+    .researchContent{
+  
+        display: block;
+        justify-content: space-evenly;
+    }
+    
+    .card{
+        margin:0%;
+        margin-bottom:5%;
+        background-color: white;
+        max-width:680px;
+    }
+
+    .card .paragraph{
+        margin:5%;
+    }
+
+    .card .header{
+        font-size:1.5rem;
+        line-height: 30px;
+        padding:8%;
+    }
+    
+    .content-bottom{
+        max-width: 768px;
+        display:block;
+    }
+    
+    .content-bottom .bottom{
+        text-align: center;
+        width:100%;
+    }
+    .content-bottom p{
+        min-height:0px;
+        margin:7%;
+    }
+    .content-bottom img{
+        width:100%;
+        max-width: 680px;
+    }
+    .btn-primary--outline{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-us{
+        max-height:768px;
+        text-align: center;
+        padding: 8%;
+        background:linear-gradient(to bottom, rgba(0, 69, 138,1), rgba(0, 189, 219,0.5)),url("../images/contactus.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        color:white;
+        border:1px solid black;
+    }
+    
+    .contact-us div div{
+         font-size: 20px;
+         margin-left:15%;
+         margin-right:15%;
+         margin-top:6%;
+    }
+    
+    .contact--content{
+        margin-bottom:5%;
+    }
+    
+    .btn-primary--bg{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+    nav{
+        color:#00458A;
+        justify-content: space-between;
+        padding: 10px 0px 0px 0px;
+        box-shadow: 1px 1px 8px #888888;
+        display:flex;
+        max-width: 768px;
+    }
+    nav .menu{
+        display:block;
+        font-size:2rem;
+        padding:5%;
+        color:lightblue;
+    }
+    
+    nav div a{
+        color:#00458A;
+        text-decoration: none;
+        padding:20px;
+    }
+    
+    nav div{
+        padding:10px;
+        display:none;
+    }
+
+    .head{
+        display: block;
+        font-size:2.5rem;
+    }
+
+    
+    
+}
