@@ -1,20 +1,30 @@
+.container-fluid{
+    margin:0;
+    padding:0;
+}
 nav{
+    width:100%;
     color:#00458A;
     display:flex;
     justify-content: space-between;
-    padding: 0px 90px 0px 90px;
     box-shadow: 1px 1px 8px #888888;
+}
+.head-content{
+    display: flex;
+    justify-content: space-around;
 }
 
 nav div a{
     color:#00458A;
     text-decoration: none;
-    padding-right:20px;
+ 
 }
 
 nav div{
     padding:1.5%;
+    flex-grow:1;
 }
+
 
 nav .menu{
     display:none;
