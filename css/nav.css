@@ -1,79 +1,100 @@
-.container-fluid{
-    margin:0;
-    padding:0;
+/* nav title */
+.nav-title {
+    font-size: 20px;
 }
+.title-area {
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+}
+
 nav{
-    width:100%;
     color:#00458A;
     display:flex;
     justify-content: space-between;
+    /* padding: 0px 90px 0px 90px; */
     box-shadow: 1px 1px 8px #888888;
-}
-.head-content{
-    display: flex;
-    justify-content: space-around;
 }
 
 nav div a{
     color:#00458A;
     text-decoration: none;
- 
+    padding-right:20px;
 }
 
 nav div{
     padding:1.5%;
-    flex-grow:1;
+}
+/* burger */
+.burger {
+   width: 25px;
+   height: 3px;
+   background: #00458A;
+   margin: 3px 0 ;
+   transition: 0.5s;
+}
+.burger-container > .burger-top {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-5px,3px);
+}
+.burger-container > .burger-center {
+    opacity: 0;
+}
+.burger-container > .burger-bottom {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-5px, -3px);
+}
+.mb-show {
+    display: none;
 }
 
 
-nav .menu{
-    display:none;
-    background-color:transparent;
-    border:none;
-}
-.nav{
-    display:none;
-    font-size:20px; 
-}
-
-.nav a{
-    display:block;
-    background-color:white;
-    color:#00458A !important;
-    padding:2%;
-}
-
-@media only screen and (max-width: 768px){
-
-    nav{
-        color:#00458A;
-        justify-content: space-between;
-        padding: 10px 0px 0px 0px;
-        box-shadow: 1px 1px 8px #888888;
-        display:flex;
-        max-width: 768px;
-    }
-    nav .menu{
-        display:block;
-        font-size:2rem;
-        padding:5%;
-        color:lightblue;
-    }
-    
-    nav div a{
-        color:#00458A;
-        text-decoration: none;
-        padding:20px;
-    }
-    
-    nav div{
-        padding:10px;
-        display:none;
-    }
-
-    .head{
+@media screen and (max-width:767px) {
+    .mb-show {
         display: block;
-        font-size:2.5rem;
+        text-align: right;
     }
+   
+    .mb-mode {
+        flex-wrap:wrap !important;
+        justify-content: start !important;
+    }
+    .mb-mode > li {
+        /* height: 0px; */
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        
+    }  
+    .mb-list {
+        display: none;
+    }
+    
 
 }
+
+@media screen and (min-width:768px) {
+    .mb-list-show {
+        display: block !important;
+    }
+    .mb-mode > li > a{
+       font-size: 14px;
+        
+    }
+   
+}
+
+@media screen and (min-width:769px) {
+    .mb-list-show {
+        display: block !important;
+    }
+ 
+    .mb-mode > li > a{
+       font-size: 16px;
+        
+    }
+   
+}
+
