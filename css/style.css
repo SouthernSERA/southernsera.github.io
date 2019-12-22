@@ -1,4 +1,5 @@
 nav{
+    width:100%;
     color:#00458A;
     display:flex;
     justify-content: space-between;
@@ -24,6 +25,7 @@ nav div{
     justify-content: space-between;
     padding:5%;
     padding-bottom: 5%;
+    align-items: baseline;
 }
 
 .content-top div{
@@ -97,7 +99,7 @@ nav div{
 }
 
 .content-bottom .bottom{
-    margin:5%;
+    margin:5% 0;
     text-align: center;
     width:50%;
 }
@@ -105,7 +107,7 @@ nav div{
     min-height:150px;
 }
 .content-bottom img{
-    max-width: 500px;
+    width:100%;
 }
 .btn-primary--outline{
     margin-left: auto;
@@ -192,7 +194,7 @@ nav .menu{
     }
 
     .paragraph{
-        font-size: 1.7rem;
+    
         line-height: 2rem;
     }
  
@@ -275,6 +277,7 @@ nav .menu{
         margin:7%;
     }
     .content-bottom img{
+        width:100%;
         max-width: 680px;
     }
     .btn-primary--outline{
@@ -291,6 +294,7 @@ nav .menu{
         background-position: center;
         background-size: 100%;
         color:white;
+        border:1px solid black;
     }
     
     .contact-us div div{
