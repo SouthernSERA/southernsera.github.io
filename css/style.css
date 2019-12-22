@@ -175,8 +175,6 @@ nav .menu{
         flex-direction:column-reverse;
         justify-content: center;
         padding:9%;
-
-       
     }
     
     .content-top div{
@@ -199,12 +197,13 @@ nav .menu{
     .content-top .hero--title{
         margin-bottom:10%;
     }
+
     .hero--title{
-        font-size: 2.5rem;
+        font-size: 1.7rem;
     }
 
     .paragraph{
-    
+        font-size:1rem;
         line-height: 2rem;
     }
  
@@ -268,9 +267,7 @@ nav .menu{
     }
 
     .card .header{
-        font-size:1.5rem;
         line-height: 30px;
-        padding:8%;
     }
     
     .content-bottom{
@@ -331,11 +328,12 @@ nav .menu{
         box-shadow: 1px 1px 8px #888888;
         display:flex;
         max-width: 768px;
+        
     }
     nav .menu{
         display:block;
-        font-size:2rem;
-        padding:5%;
+        font-size:1rem;
+        padding:3%;
         color:lightblue;
     }
     
@@ -352,7 +350,7 @@ nav .menu{
 
     .head{
         display: block;
-        font-size:2.5rem;
+        font-size:1rem;
     }
 
     nav .head-content{
