@@ -1,0 +1,19 @@
+.ourresearch-section
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #00458A,#00BDDB);   
+}
+
+.ourresearch--header
+{
+    color: var(--white);
+}
+
+.ourresearch--banner
+{
+    background-color: rgb(255, 255, 255, .25);
+    width: 100%;
+    height: 50vh;    
+}

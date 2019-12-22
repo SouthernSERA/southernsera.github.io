@@ -1,6 +1,6 @@
 /* nav title */
 .nav-title {
-    font-size: 20px;
+    font-size: 15px;
 }
 .title-area {
     box-sizing: border-box;
@@ -12,7 +12,7 @@ li {
 nav{
     color:#00458A;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     /* padding: 0px 90px 0px 90px; */
     box-shadow: 1px 1px 8px #888888;
 }
