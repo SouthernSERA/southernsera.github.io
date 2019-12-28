@@ -19,8 +19,8 @@
 
 .contact-container
 {
-    display: flex;
-    flex-flow: row-reverse;
+    display: flex;    
+    /* flex-flow: row-reverse; */
     align-items: center;
 }
 
@@ -42,7 +42,9 @@
 {
     .contact-container
     {
-        flex-flow: column-reverse;        
+        /* display: flex; */
+        display: initial;
+        /* flex-flow: column-reverse;         */
     }
 
     .contact-us
